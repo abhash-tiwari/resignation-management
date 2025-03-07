@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const resignSchema = new mongoose.Schema({
+const resignationSchema = new mongoose.Schema({
   employeeId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
@@ -20,4 +20,4 @@ const resignSchema = new mongoose.Schema({
   }
 }, { timestamps: true })
 
-export default mongoose.model('Resignation', resignSchema) 
+export default mongoose.model('Resignation', resignationSchema) 

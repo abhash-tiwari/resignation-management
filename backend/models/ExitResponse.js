@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const ResponseSchema = new mongoose.Schema({
+const exitResponseSchema = new mongoose.Schema({
   employeeId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
@@ -12,4 +12,4 @@ const ResponseSchema = new mongoose.Schema({
   }]
 }, { timestamps: true })
 
-export default mongoose.model('Response', ResponseSchema) 
+export default mongoose.model('ExitResponse', exitResponseSchema) 
